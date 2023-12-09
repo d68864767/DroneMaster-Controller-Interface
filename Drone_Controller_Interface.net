@@ -1,0 +1,37 @@
+(export (version D)
+  (design
+    (source "Drone_Controller_Interface.sch")
+    (date "2023-04-01T12:00:00Z")
+    (tool "Eeschema 5.1.9")
+    (sheet (number 1) (name "/") (tstamps /) (title_block
+      (title "Drone Controller Interface Schematic")
+      (date "")
+      (rev "")
+      (company "")
+      (comment 1 "")
+      (comment 2 "")
+      (comment 3 "")
+      (comment 4 "")
+    ))
+  )
+  (components
+    (comp (ref U1)
+      (value "Drone_Controller_Interface")
+      (footprint "Drone_Controller_Interface_Footprint")
+      (libsource (lib "Drone_Controller_Interface") (part "Drone_Controller_Interface"))
+      (sheetpath (names /) (tstamps /))
+      (tstamp 5B3E8F43)
+    )
+  )
+  (nets
+    (net (code 1) (name "Input_from_Remote/Sensors")
+      (node (ref U1) (pin 1))
+      ; Additional nodes would be listed here if there were more connections
+    )
+    (net (code 2) (name "Output_to_Motors/Actuators")
+      (node (ref U1) (pin 2))
+      ; Additional nodes would be listed here if there were more connections
+    )
+    ; Additional nets would be listed here if there were more connections
+  )
+)
